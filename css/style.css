@@ -1,0 +1,163 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height:1.7;
+    color: #777; 
+    padding: 30px;
+}
+
+.header {
+    height: 240vh; /* the height of this element should be 95% of viewport height*/
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(137, 212, 241, 0.8),
+        rgba(185, 190, 184, 0.8)),
+    url(../img/background.jpg);
+    background-size: cover;   /*try to fix image into header*/
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 200vh, 0 100%);
+    
+}
+
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.logo {
+    height: 35px;
+}
+
+.text-box {
+    position: absolute;
+    top: 20%; /*50% top from parent*/
+    left: 50%; /*50% left from parent*/
+    transform: translate(-50%, -50%); /*shift -50% itself*/
+    text-align: center;
+    width: 70%;
+}
+
+.heading-primary {
+    color: #fff;
+    text-transform: uppercase;
+
+    backface-visibility: hidden; /* fix shaking */
+    margin-bottom: 60px;
+}
+
+.heading-primary-main {
+    display: block;
+    font-size: 70px;
+    font-weight: 700;
+    letter-spacing: 30px;
+
+    animation-name: moveInLeft;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: ease-out;
+
+    /*
+    animation-iteration-count: 2;
+    */
+}
+
+.heading-primary-sub {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 14px;
+
+    animation: moveInRight 1.5s 0.5s ease-out; /* short cut*/
+}
+
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-200px); /*from left move in*/
+    }
+    40% {
+        transform: rotate(10deg);
+    }
+
+    80% {
+        transform: translateX(30px);
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0); /* mean look like right now*/
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px); /*from left move in*/
+    }
+    40% {
+        transform: rotate(10deg);
+    }
+
+    80% {
+        transform: translateX(-30px);
+        transform: rotate(-10deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0); /* mean look like right now*/
+    }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px); /*move up*/ 
+    box-shadow: 0 20px 20px rgba(0,0,0,0.5);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+
+
+
+
