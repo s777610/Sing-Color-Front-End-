@@ -132,6 +132,18 @@ body {
     }
 }
 
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(400px); 
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0); 
+    }
+}
+
 .btn:link,
 .btn:visited {
     text-transform: uppercase;
@@ -171,13 +183,16 @@ body {
     transition: all 0.4s /*time of transform*/
 }
 .btn-white::after {
-    background-color: rgb(47, 144, 235);
+    background-color: #fff;
 }
 
 .btn:hover::after {
-    transform: scale(1.5);
+    transform: scaleX(1.4) scaleY(1.6);
     opacity: 0;
 }
 
-
+.btn-animated {
+    animation: moveInBottom 1.0s 0.5s ease-out;
+    animation-fill-mode: backwards; /*apply stype up to 0% before animation start*/
+}
 
