@@ -46,17 +46,17 @@ body {
 }
 
 
-.logo-box {
+.header__logo-box {
     position: absolute;
     top: 4rem;
     left: 4rem;
 }
 
-.logo {
+.header__logo {
     height: 3.5rem;
 }
 
-.text-box {
+.header__text-box {
     position: absolute;
     top: 20%; /*50% top from parent*/
     left: 50%; /*50% left from parent*/
@@ -73,7 +73,7 @@ body {
     margin-bottom: 6rem;
 }
 
-.heading-primary-main {
+.heading-primary--main {
     display: block;
     font-size: 7rem;
     font-weight: 700;
@@ -89,7 +89,7 @@ body {
     */
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
     display: block;
     font-size: 3rem;
     font-weight: 700;
@@ -171,7 +171,7 @@ body {
     box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
-.btn-white {
+.btn--white {
     background-color: #fff;
     color: #777;
 }
@@ -188,7 +188,7 @@ body {
     z-index: -1; /*behind the btn */
     transition: all 0.4s /*time of transform*/
 }
-.btn-white::after {
+.btn--white::after {
     background-color: #fff;
 }
 
@@ -197,7 +197,7 @@ body {
     opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveInBottom 1.0s 0.5s ease-out;
     animation-fill-mode: backwards; /*apply stype up to 0% before animation start*/
 }
