@@ -1,0 +1,22 @@
+{
+  "name": "sing-color",
+  "version": "1.0.0",
+  "description": "https://s777610.github.io/Sing-Color-Web-Development-/",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s777610/Sing-Color-Web-Development-.git"
+  },
+  "author": "weicheng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s777610/Sing-Color-Web-Development-/issues"
+  },
+  "homepage": "https://github.com/s777610/Sing-Color-Web-Development-#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
