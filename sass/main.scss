@@ -1,11 +1,10 @@
-/*
-COLORS:
+$color-primary: #55c57a;
+$color-primary-light: #89d4f1;;
+$color-primary-dark: #b9beb8;
+$color-grey-dark: #777;
+$color-white: #fff;
 
-Light green: #7ed56f
-Medium green: #55c57a
-Dark green: #28b485
 
-*/
 
 
 *,
@@ -26,7 +25,7 @@ body {
     font-weight: 40rem;
     font-size: 1.6rem;
     line-height:1.7;
-    color: #777; 
+    color: $color-grey-dark; 
     padding: 3rem;
     box-sizing: border-box;
 }
@@ -35,8 +34,8 @@ body {
     height: 240vh; /* the height of this element should be 95% of viewport height*/
     background-image: linear-gradient(
         to right bottom,
-        rgba(137, 212, 241, 0.8),
-        rgba(185, 190, 184, 0.8)),
+        rgba($color-primary-light, 0.8),
+        rgba(#b9beb8, 0.8)),
     url(../img/background.jpg);
     background-size: cover;   /*try to fix image into header*/
     background-position: top;
@@ -66,7 +65,7 @@ body {
 }
 
 .heading-primary {
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
 
     backface-visibility: hidden; /* fix shaking */
@@ -172,8 +171,8 @@ body {
 }
 
 .btn--white {
-    background-color: #fff;
-    color: #777;
+    background-color: $color-white;
+    color: $color-grey-dark;
 }
 
 .btn::after {
@@ -189,7 +188,7 @@ body {
     transition: all 0.4s /*time of transform*/
 }
 .btn--white::after {
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 .btn:hover::after {
