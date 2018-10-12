@@ -1,0 +1,32 @@
+.header {
+    height: 240vh; /* the height of this element should be 95% of viewport height*/
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba(#b9beb8, 0.8)),
+    url(../img/background.jpg);
+    background-size: cover;   /*try to fix image into header*/
+    background-position: top;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 200vh, 0 100%);
+
+    &__logo-box {
+        position: absolute;
+        top: 4rem;
+        left: 4rem;
+    }
+    
+    &__logo {
+        height: 3.5rem;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 20%; /*50% top from parent*/
+        left: 50%; /*50% left from parent*/
+        transform: translate(-50%, -50%); /*shift -50% itself*/
+        text-align: center;
+        width: 70%;
+    }
+    
+}
