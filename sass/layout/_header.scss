@@ -3,7 +3,7 @@
     background-image: linear-gradient(
         to right bottom,
         rgba($color-primary-light, 0.8),
-        rgba(#b9beb8, 0.8)),
+        rgba($color-primary-dark, 0.8)),
     url(../img/background.jpg);
     background-size: cover;   /*try to fix image into header*/
     background-position: top;
