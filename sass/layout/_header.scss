@@ -8,7 +8,7 @@
     background-size: cover;   /*try to fix image into header*/
     background-position: top;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 200vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 200% 200vh, 0 100%);
 
     &__logo-box {
         position: absolute;
