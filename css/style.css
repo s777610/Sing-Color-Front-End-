@@ -966,7 +966,7 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(156, 216, 240, 0.8), rgba(169, 169, 177, 0.8)), url(../img/background.jpg);
+  background-image: linear-gradient(to right bottom, rgba(156, 216, 240, 0.5), rgba(169, 169, 177, 0.5)), url(../img/new_background.jpg);
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
