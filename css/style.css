@@ -799,14 +799,15 @@ body {
     width: calc(3 * ((100% - 3 * 6rem)) / 4 + 2 * 6rem); }
 
 .header {
-  height: 240vh;
+  height: 95vh;
   /* the height of this element should be 95% of viewport height*/
-  background-image: linear-gradient(to right bottom, rgba(156, 216, 240, 0.8), rgba(169, 169, 177, 0.8)), url(../img/background.jpg);
+  background-image: linear-gradient(to right bottom, rgba(156, 216, 240, 0.5), rgba(169, 169, 177, 0.5)), url(../img/new_background.jpg);
   background-size: cover;
   /*try to fix image into header*/
   background-position: top;
   position: relative;
-  clip-path: polygon(0 0, 100% 0, 200% 200vh, 0 100%); }
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   @media (max-width: 37.5em) {
     .header {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -819,7 +820,7 @@ body {
     height: 7rem; }
   .header__text-box {
     position: absolute;
-    top: 20%;
+    top: 40%;
     /*50% top from parent*/
     left: 50%;
     /*50% left from parent*/

@@ -1,14 +1,15 @@
 .header {
-    height: 240vh; /* the height of this element should be 95% of viewport height*/
+    height: 95vh; /* the height of this element should be 95% of viewport height*/
     background-image: linear-gradient(
         to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)),
-    url(../img/background.jpg);
+        rgba($color-primary-light, 0.5),
+        rgba($color-primary-dark, 0.5)),
+    url(../img/new_background.jpg);
     background-size: cover;   /*try to fix image into header*/
     background-position: top;
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 200% 200vh, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     @include respond(phone) {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
@@ -27,7 +28,7 @@
     
     &__text-box {
         position: absolute;
-        top: 20%; /*50% top from parent*/
+        top: 40%; /*50% top from parent*/
         left: 50%; /*50% left from parent*/
         transform: translate(-50%, -50%); /*shift -50% itself*/
         text-align: center;
