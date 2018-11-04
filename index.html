@@ -23,14 +23,22 @@
                 <div class="navigation__background">&nbsp;</div>
                 <nav class="navigation__nav">
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a href="#" class="navigation__link"><span>01</span>Sing Color</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link"><span>02</span>產品相關</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link"><span>03</span>聯絡資訊</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link"><span>04</span>品牌故事</a></li>
-                        <li class="navigation__item"><a href="#" class="navigation__link"><span>05</span>立即下單</a></li>
+
+    
+                        <li class="navigation__item"><a href="#" class="navigation__link" onclick="closeNavig()"><span>01</span>Sing Color</a></li>
+                        <li class="navigation__item"><a href="#about" class="navigation__link" onclick="closeNavig()"><span>02</span>產品相關</a></li>
+                        <li class="navigation__item"><a href="#contact" class="navigation__link" onclick="closeNavig()"><span>03</span>聯絡資訊</a></li>
+                        <li class="navigation__item"><a href="#story" class="navigation__link" onclick="closeNavig()"><span>04</span>品牌故事</a></li>
+                        <li class="navigation__item"><a href="#book" class="navigation__link" onclick="closeNavig()"><span>05</span>立即下單</a></li>
                     </ul>
                 </nav>
             </div>
+
+            <script>
+                function closeNavig() {
+                    document.getElementById('navi-toggle').checked = false;
+                }
+            </script>
 
         <header class='header'>
             <div class='header__logo-box'>
@@ -43,13 +51,13 @@
                     <span class="heading-primary--sub">Sing Your Colorful Life</span>
                 </h1>
 
-                <a href="#" class="btn btn--white btn--animated">Explore</a>
+                <a href="#section-tours" class="btn btn--white btn--animated">Explore</a>
             </div>
             
         </header>
 
         <main>
-            <section class="section-about">
+            <section class="section-about" id="about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-seconday">
                         Sing Color!
@@ -78,9 +86,7 @@
                 </div>
             </section>
 
-            <section class="section-features">
-                
-
+            <section class="section-features" id="contact">
                 <div class="row">
                     <div class="col-1-of-4">
                         <div class="feature-box">
@@ -241,7 +247,7 @@
                 </div>
             </section>
 
-            <section class="section-stories">
+            <section class="section-stories" id="story">
                     <div class="bg-video">
                         <video cladss="bg-video__content" autoplay muted loop>
                             <source src="img/video.mp4" type="video/mp4">
@@ -279,8 +285,6 @@
                             <h3 class="heading-tertiary u-margin-bottom-small">第一章-森林系女孩</h3>
                             <p>這是一個綠意昂然的房間，若你不說這是房間，那還有點像亞馬遜叢林，我坐在這叢林中的一張木桌前，隨即一個女孩蹦蹦跳跳的端來一杯花草茶，又一邊蹦蹦跳跳的整理她的草木。
                                 我喝著茶，一邊欣賞他瞎忙的樣子。
-                                
-                                
                         </p>
                         </div>
                     </div>
@@ -289,7 +293,8 @@
                     <a href="" class="btn-text">Discover more &rarr;</a>
                 </div>
             </section>
-            <section class="section-book">
+
+            <section class="section-book" id="book">
                 <div class="row">
                     <div class="book">
                         <div class="book__form">
